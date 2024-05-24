@@ -72,7 +72,7 @@
 									</div>
 								</a>
 								<div class="app-top-right-link">
-									New to Barren?<a class="sidebar-register-link" href="sign_up.jsp">Sign up</a>
+									New to Barren?<a class="sidebar-register-link" href="sign_up">Sign up</a>
 								</div>
 							</div>
 						</div>

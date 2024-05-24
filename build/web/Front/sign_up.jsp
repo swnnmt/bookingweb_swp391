@@ -4,6 +4,7 @@
     Author     : mactu
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en" class="h-100">
@@ -24,17 +25,17 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com/">
 		<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet">
-		<link href='vendor/unicons-2.0.1/css/unicons.css' rel='stylesheet'>
-		<link href="css/style.css" rel="stylesheet">
-		<link href="css/responsive.css" rel="stylesheet">
-		<link href="css/night-mode.css" rel="stylesheet">
+		<link href='Front/vendor/unicons-2.0.1/css/unicons.css' rel='stylesheet'>
+		<link href="Front/css/style.css" rel="stylesheet">
+		<link href="Front/css/responsive.css" rel="stylesheet">
+		<link href="Front/css/night-mode.css" rel="stylesheet">
 		
 		<!-- Vendor Stylesheets -->
-		<link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
-		<link href="vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
-		<link href="vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
-		<link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-		<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">		
+		<link href="Front/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+		<link href="Front/vendor/OwlCarousel/assets/owl.carousel.css" rel="stylesheet">
+		<link href="Front/vendor/OwlCarousel/assets/owl.theme.default.min.css" rel="stylesheet">
+		<link href="Front/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="Front/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">		
 		
 	</head>
 
@@ -69,18 +70,18 @@
 							<div class="registration">
                                                             <form action="sign_up" method="post">
 									<h2 class="registration-title">Sign up to Barren</h2>
-									<div class="row mt-3">
+									<div class="row mt-3">                                                           
 										<div class="col-lg-12 col-md-12">
                                                                                         <div class="form-group mt-4">
 												<label class="form-label">User Name*</label>
-                                                                                                <input class="form-control h_50" name="name" placeholder="" value="">																								
+                                                                                                <input class="form-control h_50" name="name" placeholder="" >																								
 											</div>
 										</div>
                                                                             
 										<div class="col-lg-12 col-md-12">
 											<div class="form-group mt-4">
 												<label class="form-label">Your Email*</label>
-                                                                                                <input class="form-control h_50" type="email" name="email" placeholder="" value="">																								
+                                                                                                <input class="form-control h_50" type="email" name="email" placeholder="" >																								
 											</div>
 										</div>
 										<div class="col-lg-12 col-md-12">	
@@ -89,7 +90,7 @@
 													<label class="form-label">Password*</label>
 												</div>
 												<div class="loc-group position-relative">
-                                                                                                    <input class="form-control h_50" name="password" type="password" placeholder="">
+                                                                                                    <input class="form-control h_50" name="password" type="password" placeholder="" >
 													<span class="pass-show-eye"><i class="fas fa-eye-slash"></i></span>
 												</div>
 											</div>
@@ -101,11 +102,12 @@
 													<label class="form-label">Confirm Password*</label>
 												</div>
 												<div class="loc-group position-relative">
-                                                                                                    <input class="form-control h_50" name="confirm_password" type="password" placeholder="">
+                                                                                                    <input class="form-control h_50" name="confirm_password" type="password" placeholder="" >
 													<span class="pass-show-eye"><i class="fas fa-eye-slash"></i></span>
 												</div>
 											</div>
 										</div>
+                                                                                    
 										<div class="col-lg-12 col-md-12">		
 											<button class="main-btn btn-hover w-100 mt-4" type="submit">Sign Up</button>
 										</div>
