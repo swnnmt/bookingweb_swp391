@@ -9,9 +9,9 @@ package model;
  * @author mactu
  */
 public class Constants {
-//    public static String GOOGLE_CLIENT_ID = "260351764288-fighfnvm17mondoe94g4g7cpntuc7jlt.apps.googleusercontent.com";
-//
-//	public static String GOOGLE_CLIENT_SECRET = "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";
+    public static String GOOGLE_CLIENT_ID = "260351764288-fighfnvm17mondoe94g4g7cpntuc7jlt.apps.googleusercontent.com";
+
+	public static String GOOGLE_CLIENT_SECRET = "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";
 
 	public static String GOOGLE_REDIRECT_URI = "http://localhost:8080/Project_SWP391/loginGoogleHandler";
 
