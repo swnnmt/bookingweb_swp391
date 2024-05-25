@@ -1,4 +1,10 @@
 <%-- 
+    Document   : update_password
+    Created on : May 25, 2024, 9:45:43 PM
+    Author     : mactu
+--%>
+
+<%-- 
     Document   : sign_in
     Created on : May 15, 2024, 2:48:56 AM
     Author     : mactu
@@ -78,24 +84,37 @@
 						</div>
 						<div class="col-xl-5 col-lg-6 col-md-7">
 							<div class="registration">
-                                                            <form action="login" method="post">
+                                                            <form action="forgot_password" method="post">
                                                                 <c:set var="email" value="${requestScope.email}" />
-                                                                              
+                                                                <c:set var="otp" value="${requestScope.otp}" />              
 									<h2 class="registration-title">Sign in to Barren</h2>
 									<div class="form-group mt-5">
-										<label class="form-label">Your Email*</label>
-										<input class="form-control h_50" type="email" name="email" placeholder="Enter your email" value="${email}">																								
-									</div>
+                                                                                <input class="form-control h_50" type="hidden" name="email" placeholder="Enter your email" value="${email}">																								
+                                                                                <input class="form-control h_50" type="hidden" name="otp" placeholder="Enter your email" value="${otp}">    
+                                                                        </div>
 									<div class="form-group mt-4">
-										<div class="field-password">
-											<label class="form-label">Password*</label>
-											<a class="forgot-pass-link" href="forgot_password?email=${email}">Forgot Password?</a>
+                                                                                <div class="field-password">
+											<label class="form-label">Enter Otp</label>
 										</div>
 										<div class="loc-group position-relative">
-											<input class="form-control h_50" type="password" name="password" placeholder="Enter your password">
+											<input class="form-control h_50" name="confirm_otp" placeholder="Enter your otp">
+											<span class="pass-show-eye"></span>
+										</div>
+										<div class="field-password">
+											<label class="form-label">New Password*</label>
+										</div>
+										<div class="loc-group position-relative">
+											<input class="form-control h_50" type="password" name="new_password" placeholder="Enter your new password">
 											<span class="pass-show-eye"><i class="fas fa-eye-slash"></i></span>
 										</div>
-                                                                              <c:set var="err" value="${requestScope.err}" />
+                                                                                <div class="field-password">
+											<label class="form-label">Confirm Password*</label>
+										</div>
+                                                                                <div class="loc-group position-relative">
+											<input class="form-control h_50" type="password" name="confirm_new_password" placeholder="Confirm your password">
+											<span class="pass-show-eye"><i class="fas fa-eye-slash"></i></span>
+										</div>
+                                                                               <c:set var="err" value="${requestScope.err}" />
                                                                               <p style="color: red">${err}</p>
 									</div>
                                                                       
@@ -140,3 +159,4 @@
 
 <!-- Mirrored from www.gambolthemes.net/html-items/barren-html/disable-demo-link/sign_in.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 09 May 2024 08:09:04 GMT -->
 </html>
+

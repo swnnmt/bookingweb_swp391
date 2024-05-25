@@ -61,4 +61,17 @@ import model.Account;
         }
         return null;
     } 
+           public void updatePasswordByemail (String email,String password ){
+            String sql = "UPDATE [dbo].[tbl_account]\n"
+                    + "   SET [password] = ?\n"
+                    + " WHERE  email =?";
+        try {
+            PreparedStatement st = connection.prepareStatement(sql);
+            st.setString(2,email);
+            st.setString(1, password);
+            st.executeUpdate();
+        } catch (Exception e) {
+            
+        }
+         }
     }

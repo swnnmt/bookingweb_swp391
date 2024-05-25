@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/src/java/controler/login.java</file>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/src/java/model/Constants.java</file>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/web/META-INF/context.xml</file>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/src/java/controler/confirm_signup.java</file>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/src/java/dal/DAO.java</file>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/web/Front/sign_up.jsp</file>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/web/Front/sign_in.jsp</file>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/web/Front/update_password.jsp</file>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/src/java/controler/sign_up.java</file>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/src/java/controler/forgot_password.java</file>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/src/java/model/Account.java</file>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/src/java/controler/loginGoogleHandler.java</file>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/src/java/controler/sendEmail.java</file>
+            <file>file:/C:/Users/mactu/OneDrive/Documents/NetBeansProjects/booking_swp391/web/Front/confirm_otp.jsp</file>
+        </group>
+    </open-files>
+</project-private>

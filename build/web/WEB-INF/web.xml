@@ -16,6 +16,10 @@
         <servlet-name>confirm_signup</servlet-name>
         <servlet-class>controler.confirm_signup</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>forgot_password</servlet-name>
+        <servlet-class>controler.forgot_password</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>loginGoogleHandler</servlet-name>
         <url-pattern>/loginGoogleHandler</url-pattern>
@@ -31,5 +35,9 @@
     <servlet-mapping>
         <servlet-name>confirm_signup</servlet-name>
         <url-pattern>/confirm_signup</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>forgot_password</servlet-name>
+        <url-pattern>/forgot_password</url-pattern>
     </servlet-mapping>
 </web-app>

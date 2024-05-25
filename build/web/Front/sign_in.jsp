@@ -79,15 +79,17 @@
 						<div class="col-xl-5 col-lg-6 col-md-7">
 							<div class="registration">
                                                             <form action="login" method="post">
+                                                                <c:set var="email" value="${requestScope.email}" />
+                                                                              
 									<h2 class="registration-title">Sign in to Barren</h2>
 									<div class="form-group mt-5">
 										<label class="form-label">Your Email*</label>
-										<input class="form-control h_50" type="email" name="email" placeholder="Enter your email" value="">																								
+										<input class="form-control h_50" type="email" name="email" placeholder="Enter your email" value="${email}">																								
 									</div>
 									<div class="form-group mt-4">
 										<div class="field-password">
 											<label class="form-label">Password*</label>
-											<a class="forgot-pass-link" href="forgot_password.html">Forgot Password?</a>
+											<a class="forgot-pass-link" href="forgot_password?email=${email}">Forgot Password?</a>
 										</div>
 										<div class="loc-group position-relative">
 											<input class="form-control h_50" type="password" name="password" placeholder="Enter your password">

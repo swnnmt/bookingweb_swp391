@@ -69,7 +69,7 @@ public class login extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-               String email = request.getParameter("email");
+          String email = request.getParameter("email");
         String password = request.getParameter("password");
         if(email!=null){
         DAO login = new DAO();
@@ -87,7 +87,7 @@ public class login extends HttpServlet {
              }
          }
          else{
-           
+           request.setAttribute("email", email);
            request.setAttribute("err", "password incorect");
            request.getRequestDispatcher("Front/sign_in.jsp").forward(request, response);
          }
