@@ -84,12 +84,12 @@
 									<h2 class="registration-title">Sign in to Barren</h2>
 									<div class="form-group mt-5">
 										<label class="form-label">Your Email*</label>
-										<input class="form-control h_50" type="email" name="email" placeholder="Enter your email" value="${email}">																								
+                                                                                <input class="form-control h_50" type="email" id="email" name="email" placeholder="Enter your email" value="${email}">																								
 									</div>
 									<div class="form-group mt-4">
 										<div class="field-password">
 											<label class="form-label">Password*</label>
-											<a class="forgot-pass-link" href="forgot_password?email=${email}">Forgot Password?</a>
+                                                                                        <a class="forgot-pass-link" onclick="forgot_password()">Forgot Password?</a>
 										</div>
 										<div class="loc-group position-relative">
 											<input class="form-control h_50" type="password" name="password" placeholder="Enter your password">
@@ -98,7 +98,7 @@
                                                                               <c:set var="err" value="${requestScope.err}" />
                                                                               <p style="color: red">${err}</p>
 									</div>
-                                                                      
+                                                               
                                                                         <button class="main-btn btn-hover w-100 mt-4" type="submit" ">Sign In <i class="fas fa-sign-in-alt ms-2"></i></button>
 								</form>
 								<div class="divider">
@@ -124,7 +124,12 @@
 			</div>			
 		</div>
 	</div>
-	
+	 <script>
+             function forgot_password(){
+                  var emailInput = document.getElementById("email").value;
+                   window.location='forgot_password?email='+emailInput;
+             }
+         </script>
 	<script src="js/jquery.min.js"></script>
 	<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script src="vendor/OwlCarousel/owl.carousel.js"></script>
